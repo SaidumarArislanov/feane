@@ -20,7 +20,7 @@ class MenuModel(models.Model):
 
 
 class PersonModel(models.Model):
-    num_of_people = models.PositiveIntegerField(max_length=5)
+    num_of_people = models.CharField(max_length=5)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
